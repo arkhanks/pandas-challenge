@@ -18,3 +18,52 @@ School sizes were categorized into three ranges: large (2000–5000 students), m
 
 **Scores by School Type**  
 Charter schools outperform district schools in every category. While district schools’ average reading scores are relatively close to those of charter schools, charter schools far surpass district schools in the percentage of students passing math, percentage of students passing reading, and percentage of students passing overall. This suggests that school type is a contributing factor to student performance, with charter schools performing better overall.
+
+Analysis included in PyCitySchools_Code.ipynb
+
+# PyCity Schools Analysis
+
+### Project Summary
+
+This project involved aggregating data to create a district summary that highlights key performance metrics. These metrics include:
+- Total number of schools
+- Total number of students
+- Total budget
+- Average math and reading scores
+- Percentage of students passing math
+- Percentage of students passing reading
+- Overall passing percentage
+
+Additionally, the analysis extended to the district’s 15 individual high schools where data was aggregated to examine a number of metrics potentially influencing the percentages of students passing math, percentage of students passing reading, and percentage of students passing overall. These metrics include:
+- Grade (9th, 10th, 11th, and 12th)
+- School spending per student
+- School size
+- School type (district or charter)
+
+The purpose was to understand how different metrics at the school level might contribute to these outcomes.
+
+---
+
+### Summary Analysis
+
+**Lower Performing Schools**  
+- All are district schools.  
+- All fall into the "Large" category for number of students.  
+- All are in the $630–680 spending per student range, except for Bailey High School, which, despite being in the $585–630 range, exhibits the same low student performance as the other district schools.  
+
+**Higher Performing Schools**  
+- All are charter schools.  
+- Most fall into the "Small" or "Medium" categories for number of students, except for Wilson High School, which is in the "Large" category but still maintains high student performance.  
+- All are in the <$585–630 spending per student range, except for Thomas High School, which, despite being outside this range, still exhibits the same high student performance as the other charter schools.
+
+Grade level has no correlation with student performance.
+
+---
+
+### Overall Findings
+
+- **District Schools** tend to have larger student populations and higher spending per student, which correlates with lower student performance across the board. The exception to this trend is Bailey High School, which, despite being in the lower $585–630 spending per student range, exhibits the same low student performance as the other district schools.  
+- **Charter Schools**, on the other hand, tend to have smaller student populations and lower spending per student, which is associated with higher student performance. The exceptions to this trend are Wilson High School, which is in the "Large" size category, and Thomas High School, which is in a higher spending per student range, however, both still exhibit the same high student performance as the other charter schools.  
+- Charter schools outperform district schools across all analyzed metrics. Lower spending per student and smaller school size appear to be contributing factors to better student performance.
+
+Since all charter schools outperform district schools despite some outliers in the spending per student and school size categories, a possible next step would to be to further analyze charter schools to see what other factors could be contributing to such high student performance. Potential metrics could be student:teacher ratio and parental involvement measured in number of volunteer hours.  
